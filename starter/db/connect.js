@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
-const urltry = 
-	'mongodb+srv://Guilhermebn:OOOOay198%21%40%23@nodetaskmanagerdatabase.xymxy.mongodb.net/taskmanager?retryWrites=true&w=majority'
+
+	 
 const connectDB = (url) => {
-  return mongoose.connect(urltry, {
+  return mongoose.connect(url, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,
