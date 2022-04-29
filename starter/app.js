@@ -26,6 +26,7 @@ const port = 3000
 const start = async () => {
 	try {
 		await connectDB(process.env.MONGO_URI)
+		console.log("connected to the mongo DB!!")
 		app.listen(port, console.log(`server's listening on port ${port}...`))
 	} catch (error) {
 		console.log(error)
