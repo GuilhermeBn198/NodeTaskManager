@@ -14,7 +14,7 @@ const showTasks = async () => {
       tasksDOM.innerHTML = '<h5 class="empty-list">No tasks in your list</h5>'
       loadingDOM.style.visibility = 'hidden'
       return
-    }
+    }////////////////////////////////////////////////////////////////
     const allTasks = tasks
       .map((task) => {
         const { completed, _id: taskID, name } = task
@@ -23,7 +23,6 @@ const showTasks = async () => {
           completed ? `<i class="far fa-check-circle"></i>` : ''
         }</span>${name}</h5>
 <div class="task-links">
-
 
 
 <!-- edit link -->
